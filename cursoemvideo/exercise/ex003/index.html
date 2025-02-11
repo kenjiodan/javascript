@@ -17,9 +17,12 @@
     <h1>Olá, Mundo!</h1>
     
     <script>
-        window.alert('Olá, Mundo!')             //Mensagem de alerta na janela do navegador
-        window.confirm('Está gostando do JS?')  //Mensagem com uma confirmação na janela do navegador
-        window.prompt('Qual o seu nome?')       //Mensagem com um campo para promp na janela do navegador
+        var n1 = Number(window.prompt("Coloque o primeiro número de soma."))
+        var n2 = Number(window.prompt("Coloque o segundo número de soma"))
+        var soma = n1 + n2
+        window.alert(`O resultado da soma de ${n1} e ${n2}, é ${soma}`)
+        // (number + number) para adição
+        // (string + string) para concatenação
     </script>
 </body>
 </html>

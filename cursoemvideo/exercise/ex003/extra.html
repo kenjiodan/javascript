@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(148, 122, 89);
+            color: whitesmoke;
+            text-align: center;
+            font-size: 2.3em;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    
+    <script>
+        var nome = window.prompt("Digite seu nome") // Guardando um dado dentro de uma variável
+        document.writeln(`Seu nome tem ${nome.length} letras!`)
+        document.writeln(`Seu nome em Maiúsculas é assim: ${nome.toUpperCase()}`)
+        document.writeln(`Seu nome em minúsculas é assim: ${nome.toLowerCase()}`)
+
+        /*
+            Comandos Úteis
+
+            Number.parseInt()
+            Number.parseFloat()
+            Number(n)
+
+            String(n)
+            n.toString()
+        */
+
+        /*  
+            Comandos Especificos
+
+            'texto n': Não faz interpolação
+            ''+ n: Usa concatenação
+            ${n}: Usa template string
+
+            document.write(): Gere um texto na tela
+            n.length: Faz uma contagem de letras que há na string
+            n.toUpperCase(): Transforma as letras em Maiúsculas
+            n.toLowerCase(): Transforma as letras em Minúsculas
+            
+            Extras:
+            n.toFixed(v): Adiciona casas após a virgula
+            n.Replace("," , "."): Faz uma troca de elementos contidos na variável
+            n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}): Muda a formatação do número para uma moeda especificada
+        */
+    </script>
+</body>
+</html>
