@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multa</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <input type="number" name="multa" id="imulta" placeholder="Coloque a sua velocidade">
+    <input type="button" value="Enviar" onclick="enviar()">
+    <div id="res"></div>
+
+    <script>
+    function enviar() {
+        var vel = document.getElementById('imulta')
+        var n1 = Number(vel.value)
+        res.innerHTML += `<p>Sua velocidade é de <strong>${n1}km/h</strong></p>`
+        if (n1 > 60) {
+            res.innerHTML += `<p>Você foi multado em <strong>R$1.000.000</strong> por exceder a velocidade limite.</p>`
+        }
+        res.innerHTML += `<p><em>Dirija sempre com segurança!</em></p>`
+        
+    }
+        
+    </script>
+</body>
+</html>
