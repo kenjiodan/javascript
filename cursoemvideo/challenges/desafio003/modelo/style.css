@@ -37,13 +37,29 @@ header {
     margin: 10px 0px 0px 0px;  
 }
 
+#num {
+    margin-right: 10px;
+}
+
+#calculo {
+    padding: 3px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+#res {
+    margin-top: 15px;
+    text-align: center;
+    line-height: 30px;
+}
+
 section {
     font-size: 18px;
     text-align: left;
     padding: 20px;
     border-radius: 20px;
     width: 500px;
-    height: 300px;
+    min-height: 300px;
     
     
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.726);
